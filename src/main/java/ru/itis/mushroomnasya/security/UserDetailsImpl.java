@@ -3,6 +3,7 @@ package ru.itis.mushroomnasya.security;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import ru.itis.mushroomnasya.models.State;
 import ru.itis.mushroomnasya.models.User;
 
 import java.util.Collection;

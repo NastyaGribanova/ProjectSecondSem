@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import ru.itis.mushroomnasya.service.ConfirmService;
 
 //для отправки письма на почту
 @Controller
@@ -18,6 +19,6 @@ public class ConfirmController {
                           Model model) {
         boolean isConfirmed = confirmService.confirm(confirmCode);
         model.addAttribute("isConfirmed", isConfirmed);
-        return "confirm_page";
+        return "sign_in";
     }
 }

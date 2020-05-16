@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import ru.itis.mushroomnasya.dto.SignUpDto;
+import ru.itis.mushroomnasya.service.SignUpService;
 
 @Controller
 public class SignUpController {
@@ -18,7 +20,8 @@ public class SignUpController {
 
     @PostMapping("/signUp")
     public String signUp(SignUpDto form) {
-        service.signUp(form);
-        return "redirect:/signUp";
+        if(service.signUp(form)) {
+            return "redirect:/signIn";
+        } else return "sign_up";
     }
 }
