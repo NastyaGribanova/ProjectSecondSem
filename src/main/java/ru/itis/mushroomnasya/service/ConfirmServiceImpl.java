@@ -11,7 +11,6 @@ import ru.itis.mushroomnasya.repositories.UsersRepository;
 import java.util.Optional;
 
 @Service
-@SessionScope
 public class ConfirmServiceImpl implements ConfirmService {
 
     @Autowired

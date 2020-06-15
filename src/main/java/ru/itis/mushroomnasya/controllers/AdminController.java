@@ -7,11 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.itis.mushroomnasya.dto.ShowDto;
-import ru.itis.mushroomnasya.dto.SignUpDto;
-import ru.itis.mushroomnasya.models.Genre;
-import ru.itis.mushroomnasya.repositories.ShowRepository;
 import ru.itis.mushroomnasya.service.AdminService;
-import ru.itis.mushroomnasya.service.SignUpService;
 
 @Controller
 public class AdminController {

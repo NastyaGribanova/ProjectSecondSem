@@ -17,7 +17,7 @@ public class LoggingAspect {
     public void before(JoinPoint joinPoint){
         Object[] args = joinPoint.getArgs();
         SignUpDto form = (SignUpDto) args[0];
-        System.out.println("Name of user " + form.getName() + " registered");
+        System.out.println("Name of user " + form.getName() + " tried to register");
     }
 
     @SneakyThrows

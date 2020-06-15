@@ -13,7 +13,6 @@ import java.util.List;
 import static ru.itis.mushroomnasya.dto.UserDto.from;
 
 @Service
-@Scope("scope")
 public class UsersServiceImpl implements UsersService {
 
     @Autowired

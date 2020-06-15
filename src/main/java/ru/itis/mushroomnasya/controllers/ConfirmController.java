@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import ru.itis.mushroomnasya.service.ConfirmService;
 
-//для отправки письма на почту
 @Controller
 public class ConfirmController {
 

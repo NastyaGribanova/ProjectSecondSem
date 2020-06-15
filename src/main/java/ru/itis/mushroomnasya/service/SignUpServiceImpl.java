@@ -23,7 +23,6 @@ import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 
 @Component
-@RequestScope
 public class SignUpServiceImpl implements SignUpService {
 
     @Autowired

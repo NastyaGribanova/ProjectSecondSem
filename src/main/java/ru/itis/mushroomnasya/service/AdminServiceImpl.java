@@ -14,7 +14,6 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-@ApplicationScope
 public class AdminServiceImpl implements AdminService {
 
     @Autowired
